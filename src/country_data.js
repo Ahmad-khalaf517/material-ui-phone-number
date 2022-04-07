@@ -1535,7 +1535,7 @@ const allCountries = [].concat(...rawAllCountries.map((country) => {
     iso2,
     dialCode,
     priority,
-    format: format || undefined,
+    format: format || `+${new Array(dialCode.length).fill('.').join('')} ..........`,
     hasAreaCodes: areaCodes,
   };
 
