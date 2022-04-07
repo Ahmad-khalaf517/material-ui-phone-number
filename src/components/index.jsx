@@ -664,6 +664,7 @@ class MaterialUiPhoneNumber extends React.Component {
                   aria-label="Select country"
                   onClick={(e) => this.setState({ anchorEl: e.currentTarget })}
                   aria-haspopup
+                  tabIndex={1}
                 >
                   {Boolean(FlagComponent) && <FlagComponent className="margin" />}
                 </IconButton>
